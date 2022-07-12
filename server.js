@@ -14,10 +14,10 @@ app.use(express.json());
 app.use(cors());
 
 //config PORT
-const PORT = process.env.PORT || 5000;
-
+const PORT = process.env.PORT || 3001;
 //config MongoDB
 const uri = process.env.MONGO_URI;
+console.log(uri)
 mongoose.connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
